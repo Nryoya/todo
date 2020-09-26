@@ -18,28 +18,22 @@ const list = (value) => {
   elementButton.textContent = "消す";
   ul.appendChild(elementButton);
   todos.push(value);
-  console.log(todos);
   input.value = "";
   input.focus();
 
   // 消去ボタンを押した時の関数
   elementButton.addEventListener("click",() => {
-      todos.forEach((todo) => {
+      todos.forEach((todo, index) => {
         if(todo === li.textContent){
           ul.removeChild(li);
           ul.removeChild(elementButton);
-          let idx = todos.indexOf(todo);
-          todos.splice(idx, 1);
-          console.log(todos);
+          todos.splice(index, 1);
         }
       })
   });
 }
 
-// ボタンを押した時の関数
-const submit = () => {
-  list(input.value);
-}
-
 // イベント
-btn.addEventListener("click", submit);
+btn.addEventListener("click",() => {
+  list(input.value);
+});
