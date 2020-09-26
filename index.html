@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+      font-weight: lighter;
+      font-family: serif;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      height: 100vh;
+      background: linear-gradient(135deg,rgba(0, 255, 255, 0.575) 30%, rgba(102, 67, 255, 0.575) 90%);
+    }
+
+    .div{
+      display: flex;
+      position: relative;
+      top: 30px;
+    }
+
+    input{
+      display: block;
+      width: 500px;
+      padding: 15px;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      color: #333;
+      outline: none;
+    }
+
+    .btn{
+      border: none;
+      margin-left: 10px;
+      border-radius: 5px;
+      background: linear-gradient(135deg,rgba(0, 255, 255, 0.575) 30%, rgba(102, 67, 255, 0.575) 90%);
+    }
+
+    .form{
+      position: relative;
+      top: 30px;
+      text-align: center;
+    }
+
+    ul{
+      list-style: none;
+      padding: 0;
+    }
+
+    li{
+      margin-top: 10px;
+    }
+
+    button{
+      border: none;
+      border-radius: 5px;
+      width: 60px;
+      background: linear-gradient(135deg,rgba(0, 255, 255, 0.575) 30%, rgba(102, 67, 255, 0.575) 90%);
+    }
+
+  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="input.js" defer></script>
+  <title>ToDo</title>
+</head>
+<body>
+  <h1>To Do list</h1>
+  <div class="div">
+    <input class="toDoInput" type="text">
+    <button class="btn">ADD</button>
+  </div>
+    <div class="form"></div>
+</body>
+</html>
